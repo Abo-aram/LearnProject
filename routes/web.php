@@ -2,13 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/costumPage',function(){
-    return view('costumPage');
-});
-
-Route::view('/third','costumPage');
+Route::view('/','home')->name('home');
+Route::view('/about','aboutUs')->name('about');
+Route::view('/contact','contact')->name('contact');
 
